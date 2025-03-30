@@ -1,0 +1,226 @@
+/* Základní reset a font */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    height: 100%;
+  }
+  
+  .celaStranka {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .celeCV {
+    display: flex;
+    flex: 1;
+  }
+  
+  /* Levý sloupec */
+  .levaCast {
+    width: 35%;
+    background: linear-gradient(180deg, #0a1744, #3e38c9);
+    color: white;
+    padding: 30px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .foto {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+  }
+
+  .foto img {
+    width: 250px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); 
+    border-radius: 24px;
+    margin-bottom: 30px;
+  }
+  
+  .levaCast h2 {
+    font-size: 20px;
+    margin-top: 20px;
+  }
+  
+  .levaCast ul {
+    padding-left: 20px;
+  }
+  
+  /* Pravý sloupec */
+  .pravaCast {
+    width: 65%;
+    display: flex;
+    flex-direction: column;
+    background: white;
+  }
+  
+  .hlavicka {
+    background-color: #f4f6f8;
+    padding: 40px;
+    text-align: left;
+  }
+  
+  .hlavicka h1 {
+    font-size: 48px;
+    color: #002f86;
+    margin: 0 0 10px 0;
+    font-weight: 900;
+    text-transform: uppercase; 
+    letter-spacing: 2px;
+  }
+  
+  .motto {
+    font-size: 24px;
+    font-weight: 500;
+    color: #111;
+    margin-bottom: 30px;
+    letter-spacing: 1px;
+  }
+  
+  .kontakty {
+    font-size: 18px;
+    line-height: 1.8;
+  }
+  
+  .kontakty i {
+    margin-right: 10px;
+  }
+  
+  .kontakty a {
+    color: #0a66c2;
+    text-decoration: none;
+    font-weight: 600;
+  }
+  
+  .kontakty a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Ikony kontaktů */
+  .ikonka-telefon,
+  .ikonka-mail {
+    color: black;
+    margin-right: 6px;
+  }
+  
+  .ikonka-linkedin {
+    color: #0a66c2;
+    margin-right: 6px;
+  }
+  
+  .ikonka-lokace {
+    color: #c40000;
+    margin-right: 6px;
+  }
+  
+  /* Pracovní zkušenosti */
+  .pracovniZkusenosti {
+    background-color: #e6eff7;
+    padding: 40px;
+    flex: 1;
+  }
+  
+  .celaOsa {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .celaOsa::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 188px; /* vlevo (šířka vlevo + část osy) */
+    width: 2px;
+    background-color: black;
+  }
+  
+  .pozice {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 40px;
+    position: relative;
+  }
+  
+  .vlevo {
+    flex: 0 0 150px;
+    text-align: left;
+    padding-right: 20px;
+  }
+  
+  .casovaOsa {
+    flex: 0 0 40px;
+    display: flex;
+    justify-content: center;
+    position: relative;
+  }
+  
+  .puntik {
+    width: 12px;
+    height: 12px;
+    background-color: black;
+    border-radius: 50%;
+    margin-top: 6px;
+    z-index: 1;
+  }
+  
+  .vpravo {
+    flex: 1;
+    padding-left: 20px;
+  }
+  
+  .vpravo h3 {
+    margin-top: 0;
+    font-size: 18px;
+    color: #2c3e50;
+  }
+  
+  .vpravo p {
+    margin: 0;
+    font-size: 14px;
+  }
+  
+  /* Vzdělání */
+  .vzdelani {
+    background-color: #f9f9f9;
+    padding: 40px;
+  }
+  
+  .vzdelani h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  .vzdelani h3 {
+    font-size: 18px;
+    margin-bottom: 5px;
+  }
+  
+  /* Patička */
+  .paticka {
+    text-align: center;
+    font-size: 14px;
+    padding: 20px;
+    background-color: #001f33;
+    color: white;
+  } 
+  
+  .obrazek-pracovni {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+    margin-top: 60px;
+  }
+  
+  .obrazek-pracovni img {
+    width: 400px;
+    border-radius: 24px;
+  }
